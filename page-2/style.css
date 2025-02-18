@@ -1,0 +1,95 @@
+body {
+    background-color: #3360C1;
+    cursor: url('custom-cursor.png'), auto;
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: tiny5;
+    src: url(../Tiny5-Regular.ttf);
+}
+
+@font-face {
+    font-family: sen-bold;
+    src: url(../Sen-Bold.ttf);
+}
+
+@font-face {
+    font-family: micro5;
+    src: url(../Micro5-Regular.ttf);
+}
+
+.background-image {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+}
+
+.next {
+    position: absolute;
+    justify-content: left;
+    align-items: left;
+    top: 590px;
+    left: 520px;
+}
+
+.text-1 {
+    display: flex;
+    justify-content: right;
+    align-items: right;
+    color: antiquewhite;
+    font-family: sen-bold;
+    font-size: 60px;
+    transform: translate(-610px, 600px);
+    letter-spacing: -4px;
+}
+
+.text-2 {
+    display: flex;
+    justify-content: right;
+    align-items: right;
+    color: antiquewhite;
+    font-family: tiny5;
+    font-size: 60px;
+    transform: translate(0px, 500px);
+    transition: color 0.1s ease-in-out;
+}
+
+.text-2:hover {
+    font-family: micro5;
+    font-size: 80px;
+    color: #b6d3f4;
+}
+
+.text-3 {
+    display: flex;
+    justify-content: right;
+    align-items: right;
+    color: antiquewhite;
+    font-family: sen-bold;
+    font-size: 60px;
+    transform: translate(-195px, 480px);
+    letter-spacing: -4px;
+}
+
+.text-4 {
+    position: absolute;
+    color: antiquewhite;
+    font-family: tiny5;
+    font-size: 60px;
+    top: 540px;
+    left: 1270px;
+    transition: color 0.3s ease-in-out;
+}
+
+.text-4:hover {
+    font-family: micro5;
+    font-size: 80px;
+}

@@ -1,0 +1,143 @@
+body {
+    background-color: #fff4eb;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    cursor: url('custom-cursor.png'), auto;
+}
+
+@font-face {
+    font-family: tiny5;
+    src: url(../Tiny5-Regular.ttf);
+}
+
+@font-face {
+    font-family: sen-bold;
+    src: url(../Sen-Bold.ttf);
+}
+
+@font-face {
+    font-family: micro5;
+    src: url(../Micro5-Regular.ttf);
+}
+
+.sen {
+    position: absolute;
+    transform: rotate(270deg);
+    transform-origin: right bottom;
+    font-family: sen-bold;
+    font-size: 57px;
+    color: #3360C1;
+    letter-spacing: -3px;
+}
+
+.pixel {
+    position: absolute;
+    transform: rotate(270deg);
+    transform-origin: right bottom;
+    font-family: tiny5;
+    font-size: 57px;
+    color: #3360C1;
+    transition: color 0.1s ease-in-out;
+    cursor: none;
+}
+
+.pixel:hover {
+    font-family: micro5;
+    font-size: 77px;
+    color: #559FF4;
+    top: -15px;
+}
+
+
+.text-1 {
+    display: inline-flex;
+    transform: translate(-60px, -520px);
+}
+ 
+
+.text-2 {
+    display: inline-flex;
+    transform: translate(-435px, -450px);
+}
+
+.text-3 {
+    display: inline-flex;
+    transform: translate(-325px, -450px);
+}
+
+.text-4 {
+    display: inline-flex;
+    transform: translate(420px, -615px);
+}
+
+.text-5 {
+    display: inline-flex;
+    transform: translate(90px, -545px);
+}
+
+.text-6 {
+    display: inline-flex;
+    transform: translate(-200px, -485px);
+}
+
+
+.text-7 {
+    display: inline-flex;
+    transform: translate(660px, -450px);
+}
+
+.text-8 {
+    display: inline-flex;
+    transform: translate(185px, -320px);
+}
+
+.text-9 {
+    display: inline-flex;
+    transform: translate(-220px, -256px);
+}
+
+.text-10 {
+    display: inline-flex;
+    transform: translate(325px, 18px);
+}
+
+.text-11 {
+    display: inline-flex;
+    transform: translate(55px, 150px);
+}
+
+.text-12 {
+    display: inline-flex;
+    transform: translate(-140px, 840px);
+}
+
+.text-13 {
+    display: inline-flex;
+    transform: translate(15px, 834px);
+}
+
+.text-14 {
+    display: inline-flex;
+    transform: translate(-310px, 900px);
+}
+
+.text-15 {
+    display: inline-flex;
+    transform: translate(-190px, 1020px);
+}
+
+.text-16 {
+    display: inline-flex;
+    transform: translate(-460px, 1085px);
+}
+
+.next {
+    position: absolute;
+    justify-content: right;
+    align-items: right;
+    left: 1300px;
+    top: 20px;
+}

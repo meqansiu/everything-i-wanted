@@ -1,0 +1,90 @@
+<DOCTYPE! html>
+
+<html>
+    <head>
+        <title>everything i wanted</title>
+        <link rel="stylesheet" type="text/css" href="style.css" />
+        <link rel="icon" type="image/png" href="favicon.png">
+    </head>
+
+    <body>
+        <div class="text-1">i tried to</div>
+        <div class="scream">scream</div>
+        <img id="image" src="mouth.png" width="500px" alt="First Image" onclick="changeImage()">
+    
+        <style>
+            img {
+        position: relative;
+        left: 460px;
+        top: -100px;
+        height: auto;
+        cursor: pointer;
+        transition: opacity 0.3s ease-in-out;
+        transform: translate(0px, -50px);
+        cursor: none;
+        }
+        </style>
+        <script>
+            function changeImage() {
+                let img = document.getElementById("image");
+                if (img.src.includes("mouth.png")) {
+                    img.src = "mouth-open.png";
+                } else {
+                    img.src = "mouth.png";
+                }
+            }
+        </script>
+        
+        <div class="next"><a href="page-2/index.html"><img src="star-beige.png" width="100px"></a></div>
+
+        <style>
+            * {
+                cursor: none; 
+            }
+        
+            .custom-cursor {
+                position: fixed;
+                width: 40px;
+                height: 40px;
+                background: url('custom-cursor.png') no-repeat center;
+                background-size: cover;
+                pointer-events: none; 
+                transform: translate(-50%, -50%);
+                transition: transform 0.1s linear;
+                z-index: 9999;
+            }
+        
+            a, button, input, textarea {
+                cursor: none; 
+            }
+        
+            a:hover, button:hover {
+                filter: brightness(1.2); 
+            }
+        
+        </style>
+        
+        <div class="custom-cursor"></div>
+        
+        <script>
+            const cursor = document.querySelector(".custom-cursor");
+        
+            document.addEventListener("mousemove", (e) => {
+                cursor.style.left = `${e.clientX}px`;
+                cursor.style.top = `${e.clientY}px`;
+            });
+        
+            document.querySelectorAll("a, button, .hover-trigger").forEach(item => {
+                item.addEventListener("mouseenter", () => {
+                    cursor.style.transform = "scale(1.5) translate(-50%, -50%)";
+                });
+                item.addEventListener("mouseleave", () => {
+                    cursor.style.transform = "scale(1) translate(-50%, -50%)";
+                });
+            });
+        </script>
+          
+    </body>
+</html>
+
+</DOCTYPE>

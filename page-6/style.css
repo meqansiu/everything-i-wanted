@@ -1,0 +1,117 @@
+body {
+    background-color: #fff4eb;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    cursor: url('custom-cursor.png'), auto;
+}
+
+@font-face {
+    font-family: tiny5;
+    src: url(../Tiny5-Regular.ttf);
+}
+
+@font-face {
+    font-family: sen-bold;
+    src: url(../Sen-Bold.ttf);
+}
+
+@font-face {
+    font-family: micro5;
+    src: url(../Micro5-Regular.ttf);
+}
+
+.sen {
+    font-family: sen-bold;
+    font-size: 130px;
+    color:#3360C1;
+    letter-spacing: -11px;
+}
+
+.pixel {
+    font-family: tiny5;
+    font-size: 130px;
+    color:#3360C1;
+    transition: color 0.1s ease-in-out;
+}
+
+.pixel:hover {
+    font-family: micro5;
+    font-size: 180px;
+    transform: translate(0px, -10px);
+    color: #559FF4;
+}
+
+.next {
+    display: flex;
+    justify-content: right;
+    align-items: right;
+    width: 100px;
+    transform: translate(1300px, -125px);
+}
+
+.row-1 {
+    display: flex;
+    justify-content: right;
+    align-items: right;
+    transform: translate(-30px, 300px);
+}
+
+.row-2-1 {
+    position: absolute;
+    top: 410px;
+    left: 970px;
+}
+
+.row-2-2 {
+    position: absolute;
+    top: 420px;
+    left: 1185px;
+}
+
+.row-3-1 {
+    position: absolute;
+    top: 520px;
+    left: 850px;
+}
+
+.row-3-2 {
+    position: absolute;
+    top: 510px;
+    left: 1225px;
+}
+
+.row-4-1 {
+    position: absolute;
+    top: 620px;
+    left: 960px;
+}
+
+.row-4-2 {
+    position: absolute;
+    top: 610px;
+    left: 1220px;
+}
+
+.text-1 {
+    position: absolute;
+    font-family: sen-bold;
+    transform: rotate(270deg);
+    top: 100px;
+    left: -70px;
+    font-size: 35px;
+    letter-spacing: -2px;
+    color: #3360C1;
+}
+
+.text-1:hover {
+    color: #559FF4;
+}
+
+.quotation {
+    position: absolute;
+    left: 460px;
+    top: 210px;
+}

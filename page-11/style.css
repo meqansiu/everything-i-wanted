@@ -1,0 +1,97 @@
+body {
+    background-color: #fff4eb;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    cursor: url('custom-cursor.png'), auto;
+    transition: background-color 0s ease-in-out;
+}
+
+@font-face {
+    font-family: tiny5;
+    src: url(../Tiny5-Regular.ttf);
+}
+
+@font-face {
+    font-family: sen-bold;
+    src: url(../Sen-Bold.ttf);
+}
+
+@font-face {
+    font-family: micro5;
+    src: url(../Micro5-Regular.ttf);
+}
+
+.sen {
+    font-family: sen-bold;
+    font-size: 50px;
+    letter-spacing: -5px;
+    color:#3360C1;
+}
+
+.pixel {
+    display: flex;
+    font-family: tiny5;
+    font-size: 50px;
+    color:#3360C1;
+    transition: color 0.1s ease-in-out;
+}
+
+.pixel:hover {
+    font-family: micro5;
+    font-size: 65px;
+}
+
+.clickable-text {
+    font-size: 250px;
+    font-family: tiny5;
+    cursor: none;
+    display: inline-block;
+    padding: 10px;
+    transition: color 0s ease-in-out; 
+    color: #3360C1;
+    transform: translate(545px, 250px);
+}
+
+.active {
+    background-color: #3360C1; 
+    color: #fff4eb;
+}
+
+.clickable-text:hover {
+    color: #559FF4;
+}
+
+
+
+.row-1 {
+    position: absolute;
+    left: 650px;
+    top: 210px;
+}
+
+.row-2 {
+    position: absolute;
+    left: 650px;
+    top: 250px;
+}
+
+.row-3 {
+    position: absolute;
+    left: 650px;
+    top: 290px;
+}
+
+.next {
+    position: absolute;
+    left: 20px;
+    top: 30px;
+}
+
+.next-2 {
+    position: absolute;
+    left: 1300px;
+    top: 675px;
+}

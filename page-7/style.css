@@ -1,0 +1,55 @@
+body {
+    background-color: #3360C1;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    cursor: url('custom-cursor.png'), auto;
+}
+
+@font-face {
+    font-family: tiny5;
+    src: url(../Tiny5-Regular.ttf);
+}
+
+@font-face {
+    font-family: sen-bold;
+    src: url(../Sen-Bold.ttf);
+}
+
+@font-face {
+    font-family: micro5;
+    src: url(../Micro5-Regular.ttf);
+}
+
+.text-1 {
+    font-family: sen-bold;
+    font-size: 50px;
+    color:antiquewhite;
+    letter-spacing: -5px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    gap: 30px
+}
+
+.text-2 {
+    font-family: tiny5;
+    color: antiquewhite;
+    font-size: 50px;
+    transform: translate(0px, -50px);
+    transition: color 0.1s ease-in-out;
+}
+
+.text-2:hover {
+    font-family: micro5;
+    font-size: 65px;
+    transform: translate(0px, -10px);
+    color: #b6d3f4;
+}

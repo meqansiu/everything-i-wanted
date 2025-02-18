@@ -1,0 +1,100 @@
+<DOCTYPE! html>
+
+<html>
+    <head>
+        <title>everything i wanted</title>
+        <link rel="stylesheet" type="text/css" href="style.css" />
+    </head>
+
+    <body>
+       
+        <div class="sen">
+            <div class="text-1">they called me</div>
+            <div class="text-2">like i'm</div>
+            <div class="text-3">just</div>
+        </div>
+
+        <div class="pixel">
+            <div class="text-4">weak</div>
+            <div class="text-5">not</div>
+            <div class="text-6">somebody's daughter</div>
+        </div>
+
+
+        <div class="sen">
+            <div class="text-7">could been a</div>
+            <div class="text-8">but it felt like they</div>
+            <div class="text-9">were</div>
+        </div>
+
+        <div class="pixel">
+            <div class="text-10">nightmare</div>
+            <div class="text-11">right there</div>
+        </div>
+
+
+        <div class="sen">
+            <div class="text-12">but i</div>
+            <div class="text-13">wanna let</div>
+            <div class="text-14">know</div>
+        </div>
+
+        <div class="pixel">
+            <div class="text-15">don't</div>
+            <div class="text-16">anybody</div>
+        </div>
+
+        <div class="next"><a href="../page-4/index.html"><img src="../star-blue.png" width="100px"></a></div>
+
+        
+        <style>
+            * {
+                cursor: none; 
+            }
+        
+            .custom-cursor {
+                position: fixed;
+                width: 40px;
+                height: 40px;
+                background: url('custom-cursor.png') no-repeat center;
+                background-size: cover;
+                pointer-events: none; 
+                transform: translate(-50%, -50%);
+                transition: transform 0.1s linear;
+                z-index: 9999;
+            }
+        
+            a, button, input, textarea {
+                cursor: none; 
+            }
+        
+            a:hover, button:hover {
+                filter: brightness(1.2); 
+            }
+        
+        </style>
+        
+        <div class="custom-cursor"></div>
+        
+        <script>
+            const cursor = document.querySelector(".custom-cursor");
+        
+            document.addEventListener("mousemove", (e) => {
+                cursor.style.left = `${e.clientX}px`;
+                cursor.style.top = `${e.clientY}px`;
+            });
+        
+            document.querySelectorAll("a, button, .hover-trigger").forEach(item => {
+                item.addEventListener("mouseenter", () => {
+                    cursor.style.transform = "scale(1.5) translate(-50%, -50%)";
+                });
+                item.addEventListener("mouseleave", () => {
+                    cursor.style.transform = "scale(1) translate(-50%, -50%)";
+                });
+            });
+        </script>
+
+    </body>
+
+</html>
+</DOCTYPE>

@@ -1,0 +1,83 @@
+<DOCTYPE! html>
+
+<html>
+    <head>
+        <title>everything i wanted</title>
+        <link rel="stylesheet" type="text/css" href="style.css" />
+    </head>
+
+    <body>
+        <div class="container">
+            <div class="text-1">don't wanna</div>
+            
+            <div class="text-2" id="text" onclick="rotateIncrement()">lie</p>
+
+                <script>
+                let angle = 0;
+    
+                function rotateIncrement() {
+                var text = document.getElementById("text");
+                angle += 90; // Increase angle by 90 degrees each click
+                text.style.transform = `rotate(${angle}deg)`;
+                }
+                </script>
+            </div>
+
+            <div class="text-1">here</div>
+
+            <div class="next"><a href="../page-8/index.html"><img src="../star-beige.png" width="100px"></a></div>
+
+            <style>
+                * {
+                    cursor: none; 
+                }
+            
+                .custom-cursor {
+                    position: fixed;
+                    width: 40px;
+                    height: 40px;
+                    background: url('custom-cursor.png') no-repeat center;
+                    background-size: cover;
+                    pointer-events: none; 
+                    transform: translate(-50%, -50%);
+                    transition: transform 0.1s linear;
+                    z-index: 9999;
+                }
+            
+                a, button, input, textarea {
+                    cursor: none; 
+                }
+            
+                a:hover, button:hover {
+                    filter: brightness(1.2); 
+                }
+            
+            </style>
+            
+            <div class="custom-cursor"></div>
+            
+            <script>
+                const cursor = document.querySelector(".custom-cursor");
+            
+                document.addEventListener("mousemove", (e) => {
+                    cursor.style.left = `${e.clientX}px`;
+                    cursor.style.top = `${e.clientY}px`;
+                });
+            
+                document.querySelectorAll("a, button, .hover-trigger").forEach(item => {
+                    item.addEventListener("mouseenter", () => {
+                        cursor.style.transform = "scale(1.5) translate(-50%, -50%)";
+                    });
+                    item.addEventListener("mouseleave", () => {
+                        cursor.style.transform = "scale(1) translate(-50%, -50%)";
+                    });
+                });
+            </script>
+    
+
+   
+  
+    </body>
+
+</html>
+</DOCTYPE>

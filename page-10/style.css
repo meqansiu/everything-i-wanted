@@ -1,0 +1,80 @@
+body {
+    background-color: #fff4eb;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    cursor: url('custom-cursor.png'), auto;
+}
+
+@font-face {
+    font-family: tiny5;
+    src: url(../Tiny5-Regular.ttf);
+}
+
+@font-face {
+    font-family: sen-bold;
+    src: url(../Sen-Bold.ttf);
+}
+
+@font-face {
+    font-family: micro5;
+    src: url(../Micro5-Regular.ttf);
+}
+
+.sen {
+    font-family: sen-bold;
+    font-size: 50px;
+    letter-spacing: -5px;
+    color:#3360C1;
+}
+
+.pixel {
+    display: flex;
+    font-family: tiny5;
+    font-size: 50px;
+    color:#3360C1;
+    transition: color 0.1s ease-in-out;
+}
+
+.pixel:hover {
+    font-family: micro5;
+    font-size: 65px;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    display: inline-flex;
+    flex-direction: column;
+    gap: 0;
+}
+
+.row-1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+
+}
+
+.row-2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    transform: translate(0px, -15px);
+
+}
+
+.next {
+    position: absolute;
+    left: 15px;
+    top: 15px;
+}

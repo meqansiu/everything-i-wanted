@@ -1,0 +1,83 @@
+<DOCTYPE! html>
+
+<html>
+    <head>
+        <title>everything i wanted</title>
+        <link rel="stylesheet" type="text/css" href="style.css" />
+    </head>
+
+    <body>
+        <div id="trigger" class="container">
+            <div class="text-1">and they say</div>
+
+        <div id="hidden" class="hidden-text">
+            <div class="row-1"><div class="sen">as long as</div></div>
+            <div class="row-2-1"><div class="sen">i'm</div></div>
+            <div class="row-2-2"><div class="pixel">here</div></div>
+            <div class="row-3-1"><div class="pixel">no one</div></div>
+            <div class="row-3-2"><div class="sen">can</div></div>
+            <div class="row-4-1"><div class="pixel">hurt</div></div>
+            <div class="row-4-2"><div class="sen">you</div></div>
+            <div class="quotation"><img src="../quotation.png" width="500px"></div>
+        </div>
+
+        <script>
+            document.getElementById("trigger").addEventListener("click", function() {
+                let hiddenText = document.getElementById("hidden");
+                hiddenText.style.display = hiddenText.style.display === "none" ? "block" : "none";
+            });
+        </script>
+
+        <div class="next"><a href="../page-7/index.html"><img src="../star-blue.png" width="100px"></a></div>
+
+        <style>
+            * {
+                cursor: none; 
+            }
+        
+            .custom-cursor {
+                position: fixed;
+                width: 40px;
+                height: 40px;
+                background: url('custom-cursor.png') no-repeat center;
+                background-size: cover;
+                pointer-events: none; 
+                transform: translate(-50%, -50%);
+                transition: transform 0.1s linear;
+                z-index: 9999;
+            }
+        
+            a, button, input, textarea {
+                cursor: none; 
+            }
+        
+            a:hover, button:hover {
+                filter: brightness(1.2); 
+            }
+        
+        </style>
+        
+        <div class="custom-cursor"></div>
+        
+        <script>
+            const cursor = document.querySelector(".custom-cursor");
+        
+            document.addEventListener("mousemove", (e) => {
+                cursor.style.left = `${e.clientX}px`;
+                cursor.style.top = `${e.clientY}px`;
+            });
+        
+            document.querySelectorAll("a, button, .hover-trigger").forEach(item => {
+                item.addEventListener("mouseenter", () => {
+                    cursor.style.transform = "scale(1.5) translate(-50%, -50%)";
+                });
+                item.addEventListener("mouseleave", () => {
+                    cursor.style.transform = "scale(1) translate(-50%, -50%)";
+                });
+            });
+        </script>
+        
+    </body>
+
+</html>
+</DOCTYPE>

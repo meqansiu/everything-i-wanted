@@ -1,0 +1,84 @@
+<DOCTYPE! html>
+
+<html>
+    <head>
+        <title>everything i wanted</title>
+        <link rel="stylesheet" type="text/css" href="style.css" />
+    </head>
+
+    <body>
+
+        <div class="container">
+            <div class="sen">
+                <div class="row-1">they</div>
+                <div class="row-2">don't</div>
+                <div class="row-3">deserve</div>
+            </div>
+        </div>
+    
+        <div class="clickable-text" id="changeAppearance">you</div>
+    
+        <script>
+            document.getElementById("changeAppearance").addEventListener("click", function() {
+                document.body.classList.toggle("active");
+                this.classList.toggle("active");
+            });
+        </script>
+    
+
+
+        <div class="next"><a href="../index.html"><img src="../star-beige.png" width="100px"></a></div>
+        <div class="next-2"><a href="../index.html"><img src="../star-blue.png" width="100px"></a></div>
+
+        <style>
+            * {
+                cursor: none; 
+            }
+        
+            .custom-cursor {
+                position: fixed;
+                width: 40px;
+                height: 40px;
+                background: url('custom-cursor.png') no-repeat center;
+                background-size: cover;
+                pointer-events: none; 
+                transform: translate(-50%, -50%);
+                transition: transform 0.1s linear;
+                z-index: 9999;
+            }
+        
+            a, button, input, textarea {
+                cursor: none; 
+            }
+        
+            a:hover, button:hover {
+                filter: brightness(1.2); 
+            }
+        
+        </style>
+        
+        <div class="custom-cursor"></div>
+        
+        <script>
+            const cursor = document.querySelector(".custom-cursor");
+        
+            document.addEventListener("mousemove", (e) => {
+                cursor.style.left = `${e.clientX}px`;
+                cursor.style.top = `${e.clientY}px`;
+            });
+        
+            document.querySelectorAll("a, button, .hover-trigger").forEach(item => {
+                item.addEventListener("mouseenter", () => {
+                    cursor.style.transform = "scale(1.5) translate(-50%, -50%)";
+                });
+                item.addEventListener("mouseleave", () => {
+                    cursor.style.transform = "scale(1) translate(-50%, -50%)";
+                });
+            });
+        </script>
+        
+
+    </body>
+
+</html>
+</DOCTYPE>
