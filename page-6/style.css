@@ -115,3 +115,7 @@ body {
     left: 460px;
     top: 210px;
 }
+
+.hidden-text {
+    display: none; 
+}

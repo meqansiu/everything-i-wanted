@@ -98,3 +98,7 @@ body {
     left: 20px;
     top: 30px;
 }
+
+.hidden-text {
+    display: none; 
+}
